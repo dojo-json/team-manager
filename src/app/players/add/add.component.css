@@ -1,0 +1,46 @@
+section {
+  border: solid 1px black;
+  margin: 20px 15px;
+  padding: 5px;
+}
+
+form > div {
+  margin: 15px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+button {
+  background-color: green;
+  border: solid 1px black;
+  min-width: 140px;
+  color: white;
+  box-shadow: 2px 2px 1px black;
+  margin: 1px 1% 10px 50px;
+}
+
+.h2 {
+  font-size: 17pt;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.alert.alert-danger {
+  color: red;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  clear: left;
+  text-align: right;
+  width: 10%;
+}
+
+input {
+  display: inline-block;
+  float: right;
+  width: 88%;
+}

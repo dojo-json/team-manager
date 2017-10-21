@@ -1,0 +1,16 @@
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+li a {
+  font-size: 20pt;
+}
+
+li + li {
+  border-left: solid 1px black;
+  padding: 0px 5px;
+}

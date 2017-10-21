@@ -1,0 +1,46 @@
+table {
+  width: 100%;
+}
+
+thead tr {
+  background-color: #CCC;
+}
+
+tr {
+  height: 25px;
+}
+
+tr:nth-child(even) {
+  background: rgba(204, 204, 204, 0.4);
+}
+
+tr:nth-child(odd) {
+  background: #FFF;
+}
+
+section {
+  border: solid 1px black;
+  margin: 15px 10px;
+  padding: 2px;
+}
+
+th + th, td + td {
+  border-left: solid 1px black;
+}
+
+.position {
+  text-align: center;
+}
+
+button {
+  width: 65%;
+  display: block;
+  margin: auto;
+  border: solid 1px black;
+  box-shadow: 2px 2px 1px black;
+}
+
+.alert.alert-danger {
+  background-color: red;
+  color: white;
+}

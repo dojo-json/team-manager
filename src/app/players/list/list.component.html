@@ -1,0 +1,25 @@
+
+<section>
+  <table>
+    <thead>
+      <tr>
+        <th>Player Name</th>
+        <th>Preferred Position</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor='let player of players'>
+        <td (click)='selectPlayer(player)'>{{ player.name }}</td>
+        <td class='position'>{{ player.preferredPosition }}</td>
+        <td>
+          <button class='alert alert-danger' (click)='remove(player)'>Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <app-players-detail
+    (playerEmitter)='updatePlayer($event)'
+    [player]='selectedPlayer'></app-players-detail>
+</section>

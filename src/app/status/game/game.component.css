@@ -1,0 +1,60 @@
+.game {
+  padding: 5px;
+}
+
+table {
+  border: solid 1px black;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+th + th {
+  border-left: solid 2px black;
+}
+
+thead tr {
+  background-color: #CCC;
+}
+
+tr {
+  height: 25px;
+}
+
+tr:nth-child(even) {
+  background: rgba(204, 204, 204, 0.4);
+}
+
+tr:nth-child(odd) {
+  background: #FFF;
+}
+
+.game-button {
+  margin: auto;
+  margin-left: 1%;
+  width: 31.5%;
+  background-color: white;
+  border: solid 1px black;
+  box-shadow: 2px 2px 1px black;
+}
+
+.player {
+  width: 30%;
+}
+
+.playing {
+  background-color: green;
+  color: white;
+}
+
+.not-playing {
+  background-color: red;
+  color: white;
+}
+
+.undecided {
+  background-color: yellow;
+
+}

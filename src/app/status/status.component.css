@@ -1,0 +1,27 @@
+.status {
+  border: solid 1px black;
+  padding: 10px;
+}
+
+nav {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  width: 20%;
+  margin: auto;
+}
+
+ul li {
+  display: inline-block;
+}
+
+li a {
+  font-size: 14pt;
+}
+
+li + li {
+  border-left: solid 1px black;
+  padding: 1px 5px;
+}

@@ -1,0 +1,40 @@
+<section *ngIf='player'>
+  <p class='h2'><b>Player Details</b></p>
+
+  <div class="alert alert-danger" *ngIf='errors.length'>
+    <p *ngFor='let error of errors'>{{ error }}</p>
+  </div>
+
+  <div>
+    <form (submit)='updatePlayer(form.value)' #form='ngForm'>
+      <input type="hidden" name='_id' [ngModel]='player._id'>
+      <div>
+        <label for="name">Player Name:</label>
+        <input type="text" name='name'
+          [ngModel]='player.name'
+          #playerName='ngModel'
+          minlength='2'
+          required>
+
+          <div *ngIf='playerName.touched && playerName.errors'>
+            <div *ngIf='playerName.errors.required' class="alert alert-danger">
+              <p>
+                *Name is required
+              </p>
+            </div>
+            <div *ngIf='playerName.errors.minlength' class="alert alert-danger">
+                <p>
+                  *Name must be at least {{ playerName.errors.minlength.requiredLength }} characters in length.
+                </p>
+              </div>
+          </div>
+      </div>
+      <div>
+        <label for="preferredPosition">Perferred Position:</label>
+        <input type="text" name='preferredPosition' [ngModel]='player.preferredPosition' #position='ngModel'>
+      </div>
+
+      <button [disabled]='form.invalid'>Update</button>
+    </form>
+  </div>
+</section>
